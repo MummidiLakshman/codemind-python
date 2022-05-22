@@ -1,3 +1,6 @@
+a=int(input())
+b=int(input())
+c=0
 def prime(a):
     if(a==1):
         return 0
@@ -5,11 +8,8 @@ def prime(a):
         if(a%i==0):
             return 0
     return 1
-a=int(input())
-b=int(input())
-c=0
 for j in range(a,b+1):
     if(prime(j)):
         c+=1
 print(c)
-    
+        
