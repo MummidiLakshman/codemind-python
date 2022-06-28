@@ -1,23 +1,27 @@
-def prime(n):
-    if(n==1):
-        return 0
-    for i in range(2,(n//2)+1):
-        if(n%i==0):
-            return 0
-    return 1
-n=int(input())
+def prime(a):
+    if(a==1):
+        return False 
+    for i in range(2,a//2+1):
+        if(a%i==0):
+            return False
+    else:
+        return True
+a=int(input())
 c=0
 d=0
-if(prime(n)):
-    while(n>0):
-        s=n%10
-        n=n//10
-        c+=1
-        if(prime(s)==1):
-            d+=1
-    if(d==c):
-        print('Mega Prime')
-    else:
-        print('Not Mega Prime')
+if(prime(a)):
+   while(a>0):
+       s=a%10
+       a=a//10
+       c+=1
+       if(prime(s)):
+           d+=1
+   if(c==d):
+       print('Mega Prime')
+   else:
+       print('Not Mega Prime')
 else:
     print('Not Mega Prime')
+
+
+
