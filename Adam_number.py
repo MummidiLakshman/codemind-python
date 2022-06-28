@@ -1,17 +1,18 @@
 n=int(input())
 s=n*n
-d=0
-h=0
-while(n>0):
-    a=n%10
-    d=d*10+a
+r=0
+k=0
+while(n!=0):
+    f=n%10
+    r=r*10+f
     n=n//10
-f=d*d
-while(f>0):
-    g=f%10
-    h=h*10+g
-    f=f//10
-if(s==h):
+y=r*r
+while(y!=0):
+    p=y%10
+    k=k*10+p
+    y=y//10
+if(s==k):
     print('True')
 else:
     print('False')
+    
