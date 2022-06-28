@@ -9,7 +9,9 @@ else:
         c=a+b
         a=b
         b=c
-    if(c==n):
+    if(n==c):
         print('True')
     else:
         print('False')
+    
+    
