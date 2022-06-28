@@ -1,13 +1,13 @@
 n=int(input())
-a=n
-b=0
+g=n
+d=0
 if(n<0):
     n=n*-1
 while(n!=0):
-    d=n%10
-    b=b*10+d
+    s=n%10
+    d=d*10+s
     n=n//10
-if(a<0):
-    print(-b)
+if(g<0):
+    print(-d)
 else:
-    print(b)
+    print(d)
