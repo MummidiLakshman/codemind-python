@@ -1,7 +1,7 @@
-n=int(input())
-a=list(map(int,input().split()))
-b=int(input())
+a=int(input())
+b=list(map(int,input().split()))
+c=int(input())
 s=0
-for i in range(0,b+1):
+for i in range(0,c+1):
     s+=i
 print(s)
