@@ -1,3 +1,3 @@
-r=int(input())
-s=3.14*r*r
+n=int(input())
+s=3.14*n*n
 print(round(s,2))
