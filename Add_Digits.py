@@ -1,9 +1,9 @@
 n=int(input())
 while(n>9):
-    s=0
+    c=0
     while(n>0):
-        d=n%10
-        s+=d
+        s=n%10
+        c+=s
         n=n//10
-    n=s
-print(s)
+    n=c
+print(c)
