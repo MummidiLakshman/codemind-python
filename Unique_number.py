@@ -1,12 +1,12 @@
-a=input()
-d=len(str(a))
+n=input()
+d=len(str(n))
 s=''
-for i in a:
+c=0
+for i in n:
     if i not in s:
         s+=i
-    b=len(str(s))
-    if(d==b):
-          print('Unique Number')
-          break
+        c+=1
+if(c==d):
+    print('Unique Number')
 else:
     print('Not Unique Number')
