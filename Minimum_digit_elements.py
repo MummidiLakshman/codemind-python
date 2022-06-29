@@ -6,11 +6,11 @@ def rev(a):
         c+=1
     return c
 a=int(input())
-c=list(map(int,input().split()))
+b=list(map(int,input().split()))
+s=min(b)
+p=rev(s)
 d=0
-f=min(c)
-p=rev(f)
-for i in c:
+for i in b:
     if(rev(i)==p):
         d+=1
 print(d)
