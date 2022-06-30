@@ -1,8 +1,11 @@
-a=int(input())
-b=list(map(int,input().split()))
-k,j=map(int,input().split())
+n=int(input())
+a=list(map(int,input().split()))
+k,p=map(int,input().split())
 s=0
-for i in range(0,a):
-    if(b[i]>=k and b[i]<=j):
-        s+=b[i]
+c=0
+for i in a:
+    if i in range(k,p+1):
+        s+=i
 print(s)
+        
+    
