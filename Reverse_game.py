@@ -1,12 +1,12 @@
 def rev(a):
-    p=0
-    f=a
+    c=0
     while(a!=0):
         s=a%10
-        p=p*10+s
+        c=c*10+s
         a=a//10
-    return p
+    return c
 a=int(input())
-c=list(map(int,input().split()))
-for i in c:
+b=list(map(int,input().split()))
+for i in b:
     print(rev(i),end=' ')
+        
