@@ -8,11 +8,11 @@ def prime(a):
         return 1
 a=int(input())
 b=list(map(int,input().split()))
-s=0
 c=0
+s=0
 for i in b:
     if(prime(i)):
         s+=i
         c+=1
-f=s/c
-print("%.2f"%f)
+d=s/c
+print("%.2f"%d)
