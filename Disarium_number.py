@@ -1,15 +1,14 @@
 n=int(input())
-g=n
+t=n
 d=len(str(n))
-h=0
-while(n!=0):
+g=0
+while(n>0):
     s=n%10
     n=n//10
     f=pow(s,d)
-    h+=f
+    g+=f
     d-=1
-if(g==h):
+if(t==g):
     print('True')
 else:
     print('False')
-        
