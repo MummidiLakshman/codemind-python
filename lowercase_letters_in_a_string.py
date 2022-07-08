@@ -1,6 +1,6 @@
-n=str(input())
+n=input()
 c=0
-for i in range(len(n)):
-    if(n[i]>='a' and n[i]<='z'):
+for i in n:
+    if(i.islower()):
         c+=1
 print(c)
