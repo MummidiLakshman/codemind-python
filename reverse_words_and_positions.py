@@ -1,4 +1,4 @@
-a=input()
-s=list(reversed(a))
+n=input()
+s=list(reversed(n.split()))
 for i in s:
-    print(i,end='')
+    print(i[::-1],end=' ')
