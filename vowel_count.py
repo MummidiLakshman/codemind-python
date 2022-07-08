@@ -1,10 +1,7 @@
-a=input()
-v='aeiooAEIOU'
+n=input()
+v='aeiouAEIOU'
 c=0
-for i in a:
+for i in n:
     if i in v:
         c+=1
-if(c==0):
-    print('0')
-else:
-    print(c)
+print(c)
