@@ -1,17 +1,17 @@
 a,b=map(int,input().split())
-p=list(map(int,input().split()))
-s=list(map(int,input().split()))
-t=[]
-y=[]
-c=0
-for i in p:
-    if i not in t:
-        t.append(i)
-for j in s:
-    if j not in y:
-        y.append(j)
-for i in t:
-    for j in y:
+c=list(map(int,input().split()))
+d=list(map(int,input().split()))
+k=[]
+p=[]
+l=0
+for i in c:
+    if i not in k:
+        k.append(i)
+for j in d:
+    if j not in p:
+        p.append(j)
+for i in k:
+    for j in p:
         if(i==j):
-            c+=1
-print(c)
+            l+=1
+print(l)
