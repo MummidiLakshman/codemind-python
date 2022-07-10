@@ -1,15 +1,10 @@
-n=int(input())
-a=list(map(int,input().split()))
-k,p=map(int,input().split())
-s=[]
+a=int(input())
+b=list(map(int,input().split()))
+s,t=map(int,input().split())
 c=0
-for i in a:
-    if i in range(k,p+1):
-        s.append(i)
+for i in range(0,a):
+    if(b[i]>=s and b[i]<=t):
         c=1
-if(c==1):
-    print(*s)
-else:
+        print(b[i],end=' ')
+if(c==0):
     print('-1')
-        
-    
