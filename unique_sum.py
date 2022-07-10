@@ -1,10 +1,10 @@
 a=int(input())
 b=list(map(int,input().split()))
-s=[]
-c=0
+k=[]
+f=0
 for i in b:
-    if i not in s:
-        s.append(i)
-for i in s:
-    c+=i
-print(c)
+    if i not in k:
+        k.append(i)
+for i in k:
+    f+=i
+print(f)
