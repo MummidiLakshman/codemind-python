@@ -1,7 +1,7 @@
 s=input()
-f=list(s.split())
-for i in range(len(f)):
+d=list(s.split())
+for i in range(0,len(d)):
     if(i%2==0):
-        print(f[i][::-1],end=' ')
+        print(d[i][::-1],end=' ')
     else:
-        print(f[i],end=' ')
+        print(d[i],end=' ')
