@@ -10,6 +10,7 @@ def rev(a):
         c+=1
     return c
 a=int(input())
-b=list(map(int,input().split()))
+c=list(map(int,input().split()))
+d=0
 for i in range(0,a):
-    print(rev(b[i]),end=' ')
+    print(rev(c[i]),end=' ')
