@@ -9,10 +9,10 @@ def rev(a):
         a=a//10
         c+=1
     return c
-a,c=map(int,input().split())
-b=list(map(int,input().split()))
-f=0
+a,b=map(int,input().split())
+c=list(map(int,input().split()))
+d=0
 for i in range(0,a):
-    if(rev(b[i])==c):
-        f+=1
-print(f)
+    if(rev(c[i])==b):
+        d+=1
+print(d)
