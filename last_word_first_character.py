@@ -1,10 +1,9 @@
 n=input()
 s=n.split()
-d=''
-for i in range(len(s)-1,-1,-1):
-    d+=s[i]
+d=s[::-1]
+for i in d:
+    s=i
     break
-for i in range(len(d)):
-    print(d[i])
+for j in s:
+    print(j)
     break
-    
