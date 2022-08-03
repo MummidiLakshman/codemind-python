@@ -1,10 +1,10 @@
-n=int(input())
-a=list(map(int,input().split()))
-s=0
-d=0
-for i in range(0,n//2):
-    s+=a[i]
-for i in range(n//2,n):
-    d+=a[i]
-ans=abs(s-d)
-print(ans)
+a=int(input())
+b=list(map(int,input().split()))
+f=0
+g=0
+for i in range(0,a//2):
+    f+=b[i]
+for j in range(a//2,a):
+    g+=b[j]
+s=abs(f-g)
+print(s)
