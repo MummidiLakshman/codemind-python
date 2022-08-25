@@ -19,9 +19,9 @@ for i in range(n+1,n+10000):
     if(fib(i)):
         d=i
         break
-if(abs(n-s)<abs(n-d)):
+if(abs(s-n)<abs(n-d)):
     print(s)
-elif(abs(n-s)==abs(n-d)):
+elif(abs(s-n)==abs(n-d)):
     print(s,d,end=' ')
 else:
     print(d)
