@@ -9,16 +9,16 @@ def pal(n):
     s=n
     r=0
     while(n!=0):
-        a=n%10
-        r=r*10+a
+        f=n%10
+        r=r*10+f
         n=n//10
     if(s==r):
-        return r
+        return 1
     else:
         return 0
 n=int(input())
 for i in range(n+1,n+10000):
     if(pal(i)):
         if(prime(i)):
-            print(i)
+            print(i,end=' ')
             break
