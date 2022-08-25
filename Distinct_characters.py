@@ -5,7 +5,7 @@ k=''
 for i in n:
     if(i==' '):
         continue
-    if i not in s:
+    if n.count(i)==1:
         s.append(i)
 s.sort()
 for i in s:
