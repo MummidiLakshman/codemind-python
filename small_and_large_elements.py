@@ -1,11 +1,9 @@
 n=input()
 n=n.split()
 for i in n:
-    k=min(i)
+    s=min(i)
     break
-s=n[::-1]
-for i in s:
-    h=max(i)
+for i in n[::-1]:
+    d=max(i)
     break
-print(k,h)
-    
+print(s,d,end=' ')
