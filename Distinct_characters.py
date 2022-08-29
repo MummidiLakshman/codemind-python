@@ -5,7 +5,7 @@ d=''
 for i in n:
     if(i==' '):
         continue
-    if n.count(i)==1:
+    if i not in c:
         c.append(i)
 c.sort()
 for i in c:
