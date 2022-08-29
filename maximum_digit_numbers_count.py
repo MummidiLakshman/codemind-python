@@ -1,10 +1,10 @@
 n=int(input())
 a=list(map(int,input().split()))
-k=[]
+d=[]
 for i in a:
     s=len(str(i))
-    k.append(s)
-d=max(k)
+    d.append(s)
+f=max(d)
 for i in a:
-    if(len(str(i))==d):
+    if(len(str(i))==f):
         print(i,end=' ')
