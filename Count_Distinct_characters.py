@@ -1,9 +1,11 @@
 n=input()
 n=n.lower()
-s=[]
+c=[]
+d=0
 for i in n:
     if(i==' '):
         continue
-    if i not in s:
-        s.append(i)
-print(len(s))
+    if i not in c:
+        c.append(i)
+        d+=1
+print(d)
