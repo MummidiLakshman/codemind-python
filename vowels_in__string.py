@@ -1,13 +1,17 @@
-a=input()
+n=input()
 v='aeiouAEIOU'
-b=''
+s=[]
 c=0
-for i in a:
-    if i not in b:
-        b+=i
-for i in b:
+p=[]
+for i in n:
     if i in v:
-        c=1
-        print(i,end=' ')
+        s.append(i)
+for i in s:
+    if i not in p:
+        p.append(i)
+        c+=1
+#print(*p)
 if(c==0):
     print('-1')
+else:
+    print(*p)
