@@ -1,10 +1,9 @@
 n=input()
 n=n.lower()
-s=[]
-k=''
+c=0
 for i in n:
     if(i==' '):
         continue
     if n.count(i)==1:
-        s.append(i)
-print(len(s))
+        c+=1
+print(c)
