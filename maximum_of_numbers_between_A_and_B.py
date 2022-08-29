@@ -1,15 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
-k,p=map(int,input().split())
+c,d=map(int,input().split())
 s=[]
-c=0
+v=0
 for i in a:
-    if i in range(k,p+1):
+    if i in range(c,d+1):
         s.append(i)
-        c=1
-if(c==1):
-    print(max(s))
-else:
+        v+=1
+if(v==0):
     print('-1')
-        
-    
+else:
+    print(max(s))
