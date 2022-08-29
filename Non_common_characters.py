@@ -2,20 +2,24 @@ n=input()
 n=n.lower()
 m=input()
 m=m.lower()
-k=[]
+c=[]
 p=[]
+h=''
+o=0
 for i in n:
     if(i==' '):
         continue
     if i not in m:
-        k.append(i)
-for j in m:
+        c.append(i)
+for i in m:
     if(i==' '):
         continue
-    if j not in n:
-        k.append(j)
-for i in k:
+    if i not in n:
+        c.append(i)
+for i in c:
     if i not in p:
         p.append(i)
-s=len(p)
-print(s)
+        o+=1
+p.sort()
+print(o)
+    
