@@ -12,4 +12,3 @@ for i in n:
     else:
         c+=1
 print(c)
-        
