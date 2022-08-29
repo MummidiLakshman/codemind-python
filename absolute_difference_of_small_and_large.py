@@ -1,8 +1,7 @@
 n=input()
 n=n.split()
 for i in n:
-    s=(ord(max(i)))
-    p=(ord(min(i)))
-    d=abs(s-p)
+    s=ord(min(i))
+    h=ord(max(i))
+    d=abs(s-h)
     print(d,end=' ')
-    
