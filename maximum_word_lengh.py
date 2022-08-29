@@ -1,11 +1,9 @@
 n=input()
 n=n.split()
-k=[]
-m=0
+s=[]
 for i in n:
-    s=len(i)
-    k.append(s)
-for i in k:
-    if(i>m):
-        m=i
-print(m)
+    c=len(str(i))
+    s.append(c)
+d=max(s)
+print(d)
+        
