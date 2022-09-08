@@ -1,15 +1,13 @@
-a=input()
-b=a.split()
-for i in b[::-1]:
-    g=i
-    break
-s=min(g)
-l=s
-if(s.isupper()):
-    d=s.lower()
-    if d in g:
-        print(d)
-    else:
-        print(l)
+n=input().split(" ")
+d=min(n[len(n)-1])
+#print(d)
+if d==d.lower():
+    print(d)
 else:
-    print(s)
+    h=d.lower()
+    if h in n[len(n)-1]:
+        print(h)
+    else:
+        print(d)
+        
+    
