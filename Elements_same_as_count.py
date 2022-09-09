@@ -1,12 +1,16 @@
 n=int(input())
 a=list(map(int,input().split()))
-c=0
-s=[]
-for i in range(0,n):
-    if a.count(a[i])==a[i] and a[i] not in s:
-        s.append(a[i])
-        c+=1
-if c!=0:
-    print(*s)
-else:
+l=[]
+for i in a:
+    if a.count(i)==i:
+        l.append(i)
+p=[]
+for i in l:
+    if i not in p:
+        p.append(i)
+if(len(p)==0):
     print("-1")
+else:
+    for i in p:
+        print(i,end=' ')
+    
