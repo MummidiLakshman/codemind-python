@@ -1,9 +1,14 @@
 n=int(input())
 a=list(map(int,input().split()))
+l=[]
 c=0
-s=[]
-for i in range(0,n):
-    if a.count(a[i])==a[i] and a[i] not in s:
-        s.append(a[i])
+for i in a:
+    if a.count(i)==i:
+        l.append(i)
+p=[]
+for i in l:
+    if i not in p:
+        p.append(i)
         c+=1
 print(c)
+    
