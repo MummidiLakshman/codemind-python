@@ -1,12 +1,10 @@
 n=int(input())
 a=list(map(int,input().split()))
-s=''
+l=[]
 c=0
+s=[]
 for i in a:
-    if str(i) not in s:
-        for j in a:
-            if i==j:
-                s+=str(i)
-                c+=1
-        print(i,c,end=' ')
-    c=0    
+    if i not in s:
+        s.append(i)
+        print(i,a.count(i),end=' ')
+    
